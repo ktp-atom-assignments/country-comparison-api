@@ -27,8 +27,9 @@ function routes(app, rootUrl) {
     *
     * @apiError (Error 500) InternalServerError Returned if there was a server error
     */
-  app.get({ url: fullRootUrl + '/countries' },
-    controller.getCountries);
+  app.get({ url: fullRootUrl + '/countries' }, controller.getCountries);
+
+  app.get({ url: fullRootUrl + '/population/:country/:date' }, controller.getPopulationOnDate);
 }
 
 module.exports = {

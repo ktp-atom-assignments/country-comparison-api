@@ -5,7 +5,7 @@
   "main": "src/server.js",
   "private": true,
   "scripts": {
-    "start": "nodemon src/server.js",
+    "start": "node src/server.js",
     "test": "NODE_ENV=test mocha --reporter spec --ui bdd 'test/unit/**/*-test.js' --exit",
     "coverage": "nyc --reporter=lcov --reporter=text --reporter=cobertura npm test",
     "lint": "./node_modules/.bin/eslint .",
@@ -26,6 +26,8 @@
     "co": "^4.6.0",
     "everyconfig": "^1.0.2",
     "fs-promise": "^1.0.0",
+    "moment": "^2.29.1",
+    "node-fetch": "^2.6.1",
     "restify": "^8.1.0",
     "restify-errors": "^7.0.0",
     "restify-plugins": "^1.6.0",
