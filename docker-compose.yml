@@ -1,0 +1,9 @@
+version: "3.2"
+
+services:
+  country-comparison-api:
+    container_name: country-comparison-api
+    build:
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
